@@ -1,0 +1,108 @@
+{
+	"info": {
+		"_postman_id": "db2aab75-3bef-4290-a34b-cadb54c96abf",
+		"name": "Consumer API Correios",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "versao",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/versao",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"versao"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "eventos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"objetos\": [\r\n    \"BR469709121BR\",\r\n    \"BR469709135BR\",\r\n    \"BR469707899BR\",\r\n    \"BR469698239BR\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/eventos",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"eventos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "primeiroEvento",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"objetos\": [ \r\n    \"BR469709121BR\",\r\n    \"BR469709135BR\",\r\n    \"BR469707899BR\",\r\n    \"BR469698239BR\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/primeiroevento",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"primeiroevento"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "ultimoEvento",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"objetos\": [\r\n    \"BR469709121BR\",\r\n    \"BR469709135BR\",\r\n    \"BR469707899BR\",\r\n    \"BR469698239BR\"\r\n    ]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8080/ultimoevento",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"ultimoevento"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
